@@ -1,0 +1,74 @@
+/*全体のリセットと背景色*/
+body {
+   font-family:'Segoe UI',Tahoma,Geneva,sans-serif; /*フォント指定*/
+　 background-color:#f4f7f6; /*薄めグレー*/
+   display:flex;
+  justify-content:center; /*中央寄せ*/
+  align-items:center;
+  height:100vh; /*高さ指定*/
+}
+
+/*タイマーを囲むコンテナ*/
+.container{
+    background-color:#ffffff; /*白いボックス*/
+　　padding: 40px;
+    border-radius: 20px; /* 角丸 */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); /* 影 */
+    text-align: center;
+    width: 300px;
+}
+
+/* タイトル */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* タイマーの数字 */
+#timer {
+    font-size: 80px; /* 大きく */
+    font-weight: bold;
+    color: #2c3e50; /* 濃いめ紺色 */
+    font-variant-numeric: tabular-nums; /* 数字の幅を一定にしてガタつきをなくす */
+    margin: 20px 0;
+}
+
+/* ボタンエリア */
+.controls {
+    display: flex;
+    justify-content: space-around; /* ボタンを離して配置 */
+    gap: 15px;
+}
+
+/* ボタン共通のスタイル */
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px; /* 丸いボタン */
+    cursor: pointer;
+    transition: all 0.2s; /* ホバー時のアニメーション */
+    font-weight: bold;
+    width: 100%; /* コンテナ内でいっぱいにする */
+}
+
+/* Startボタンの色 */
+#start {
+    background-color: #27ae60; /* 緑 */
+    color: white;
+}
+
+#start:hover {
+    background-color: #219150; /* ホバー */
+}
+
+/* Resetボタンの色 */
+#reset {
+    background-color: #e74c3c; /* 注意喚起の赤色 */
+    color: white;
+}
+
+#reset:hover {
+    background-color: #c0392b; /* ホバーで少し濃く */
+}
